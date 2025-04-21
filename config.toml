@@ -1,0 +1,22 @@
+[project]
+title = "Netflix Titles Explorer"
+version = "0.1.0"
+port = 8501
+slug = "netflix-titles"
+entrypoint = "hello.py"
+
+[branding]
+name = "Netflix Titles Explorer"
+logo = "images/logo.png"
+favicon = "images/favicon.ico"
+primaryColor = "#F89613"
+
+[data.netflix_data]
+type = "csv"
+path = "data/netflix_titles.csv"
+delimiter=","
+header = true
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
